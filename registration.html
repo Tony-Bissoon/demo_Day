@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lib/css/navbar.css">
+    <link rel="stylesheet" href="lib/css/index-styles.css">
+    <link rel="stylesheet" href="lib/css/registration.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <title>A New Wave</title>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBz76crjdQDKWailsfGXeoG8YP9Nqrh15I",
+    authDomain: "protestdatabase.firebaseapp.com",
+    databaseURL: "https://protestdatabase.firebaseio.com",
+    projectId: "protestdatabase",
+    storageBucket: "protestdatabase.appspot.com",
+    messagingSenderId: "558020203521",
+    appId: "1:558020203521:web:43f436a3cea3facf239c00"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+<!-- javascript -->
+<script src="lib/js/registration.js" defer></script>
+</head>
+<body>
+    <div class="navbar">
+        <img id="logo" src="assets/images/AnovaeUberiqueCo.png">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="registration.html">Protest Registration</a></li>
+          <li><a href="signup.html">Protest Sign Up</a></li> 
+        </ul>
+    </div>
+    <h1> A New Wave </h1>
+    <div class="registration">
+        <form>
+            <!--name,address,start time, end time, people limit, description, date-->
+            <div>
+            <label for="name">Protest Name:</label>
+            <br>
+            <input id="name" type="text" required>
+            </div>
+
+            <div>
+              <label for="date">Date:</label>
+              <br>
+              <input id="date" type="date" required>
+            </div>
+
+            <div>
+            <label for="address">Address:</label>
+            <br>
+            <input id="address" type="text" required>
+            </div>
+
+            <div>
+            <label for="start_time">Start Time:</label>
+            <br>
+            <input id="start_time" type="time" required>
+            </div>
+
+            <div>
+            <label for="end_time">End Time:</label>
+            <br>
+            <input id="end_time" type="time" required>
+            </div>
+
+            <div>
+            <label for="people_limit">Occupancy Limit:</label>
+            <br>
+            <input id="people_limit" type="number" required>
+            </div>
+            
+            <div>
+            <label for="description">Protest Description:</label>
+            <br>
+            <textarea id="description" type= "text" required></textarea>
+            </div>
+
+            <div>
+            <label for="image">Add URL of your Photo!</label>
+            <br>
+            <input id="image" type="text" required>
+            </div>
+
+            <br>
+            <button id="submit_button">Submit your Protest!</button>
+        </form>
+    </div>
+
+    <div class="footer">
+      <center>
+        <h3>Contact Information:</h3>
+        <p><a href="mailto: anovaeuberisque@gmail.com">Company Email: Anovaeuberisque@gmail.com</a></p>
+        <br>
+        <div id="mainSocials">
+          <div class="socials">
+            <p>Instagrams:</p>
+            <p><a href="https://www.instagram.com/king_on_fire12/" target="_blank">Tony Bissoon</a></p>
+            <p><a href="https://www.instagram.com/tamihawk12/" target="_blank">Tami Kabiawu</a></p>
+            <p><a href="https://www.instagram.com/kazi_mansha/?hl=en" target="_blank">Kazi Mansha</a></p>
+            <p><a href="https://www.instagram.com/theronnie23/" target="_blank">Ronnie Jacob</a></p>
+            <br>
+          </div>
+          <div class="socials">
+            <p>LinkedIn:</p>
+            <p><a href="https://www.linkedin.com/in/tony-bissoon-8155631b4/" target="_blank">Tony Bissoon</a></p>
+            <p><a href="https://www.linkedin.com/in/tamikabiawu/" target="_blank">Tami Kabiawu</a></p>
+            <p><a href="https://www.linkedin.com/in/kazi-mansha-35048a1b4/" target="_blank">Kazi Mansha</a></p>
+            <p><a href="https://www.linkedin.com/in/ronnie-jacob-bb05871b4/" target="_blank">Ronnie Jacob</a></p>
+          </div>
+      </div>
+      </center>
+      <br>
+      <div class="copyright">
+      <center>
+        <script language="JavaScript">
+        document.write('&copy;' );
+        document.write(' AnovaeUberisque');
+        document.write('  2020 - ');
+        document.write(new Date().getFullYear());
+        </script>
+      </center>        
+      </div>
+    </div>
+</body>
+</html>
